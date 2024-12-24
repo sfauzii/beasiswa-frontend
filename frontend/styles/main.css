@@ -578,19 +578,17 @@ body {
 }
 
 /* Professional Cars Section */
-.professional-cars {
+.professional-scolarship {
   background-color: #051334;
   color: white;
   padding: 130px;
   width: 100%;
-  margin-top: -135px;
 }
 
 .container-about {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 50px;
 }
 
 .left-content-about {
@@ -843,14 +841,12 @@ body {
     width: 70px;
     /* Perkecil ukuran ikon untuk tablet */
   }
-  .professional-cars {
+  .professional-scolarship {
     padding: 50px;
-    margin-top: -100px;
   }
   .container-about {
     flex-direction: column;
     align-items: center;
-    margin-top: 80px;
   }
   .left-content-about,
   .right-content-about {
@@ -902,9 +898,6 @@ body {
 }
 /* Mobile (max-width: 480px) */
 @media screen and (max-width: 480px) {
-  .card-container-about {
-    margin-bottom: 20px;
-  }
   .card-unique {
     width: 95%;
     padding: 15px;
@@ -916,9 +909,8 @@ body {
     width: 60px;
     height: 60px;
   }
-  .professional-cars {
+  .professional-scolarship {
     padding: 30px;
-    margin-top: -80px;
   }
   .left-content-about h1 {
     font-size: 1.8em;
@@ -1166,4 +1158,12 @@ body {
     margin: 8px 0;
     /* Tighter spacing between buttons */
   }
+}
+footer {
+  bottom: 0;
+  width: 100%;
+  background-color: #051334;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
 }/*# sourceMappingURL=main.css.map */
