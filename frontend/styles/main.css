@@ -1165,5 +1165,422 @@ footer {
   background-color: #051334;
   color: white;
   text-align: center;
+  padding: 20px 0;
+}
+
+.details {
+  position: relative;
+  padding: 110px;
+  /* Added padding around the section for space */
+}
+
+.details-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 100px;
+  width: 100%;
+  height: 40vh;
+  background-color: #051334;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+  /* Behind content */
+  background-attachment: scroll;
+  overflow: hidden;
+  /* Prevent content overflow */
+}
+
+.details-content {
+  position: relative;
+  z-index: 2;
+  /* In front of background */
+  max-width: 1000px;
+  /* Sama dengan lebar dari .thumbnail-card */
+  margin: 0 auto;
+  /* Agar konten berada di tengah */
+  padding: 0 20px;
+  /* Optional: padding untuk memastikan ada space di kanan kiri */
+}
+
+/* Section Heading Content */
+.heading-content {
+  text-align: center;
+  color: white;
+  margin-top: 20px;
+  font-family: "Poppins", sans-serif;
+  /* Reduced space at the top */
+}
+
+.heading-content h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.heading-content h3 {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 10px;
+  /* Reduced space below h3 */
+}
+
+.content-columns {
+  display: flex;
+  gap: 20px;
+  padding: 0 150px;
+  margin-top: 30px;
+  padding-bottom: 20px;
+  /* Added bottom padding for space */
+}
+
+.card-car-details {
+  background-color: #fff;
+  border-radius: 15px;
+  /* Rounded corners */
+  padding: 25px;
+  /* Card shadow for depth */
+  margin-bottom: 20px;
+}
+
+.card-car-details h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.badge-category {
+  display: inline-block;
+  background-color: #051334;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 50px;
+  /* Fully rounded badge */
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.card-rating.car-details {
+  margin-top: 0;
+  margin-bottom: 25px;
+  /* Gold color for stars */
+}
+
+.card-car-details h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.card-car-details .description {
+  font-size: 16px;
+  color: #666;
+}
+
+.column-left {
+  flex: 8;
+  padding-right: 10px;
+  /* Right space for better readability */
+}
+
+.column-left h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.column-left p {
+  margin-bottom: 20px;
+}
+
+.card-form-booking {
+  background-color: white;
+  /* Card background */
+  border-radius: 15px;
+  /* Rounded corners */
+  padding: 30px;
+  /* Inner padding for content */
+  /* Light shadow for depth */
+}
+
+.card-header {
+  display: flex;
+  /* Align image and title/badge side by side */
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  /* Center items vertically */
+}
+
+.booking-image {
+  border-radius: 20px;
+  /* Rounded corners for image */
+  width: 205px;
+  /* Image width */
+  height: 131px;
+  /* Image height */
+  margin-right: 15px;
+  /* Space between image and title */
+}
+
+.title-badge {
+  margin-bottom: 30px;
+}
+
+.title-badge h3 {
+  font-weight: bold;
+  margin-bottom: 10px !important;
+}
+
+.title-badge h3 {
+  margin: 0;
+  /* Reset margin */
+  font-size: 20px;
+  /* Adjust title font size */
+}
+
+.badge {
+  background-color: #051334;
+  border-radius: 15px;
+  /* Rounded corners */
+  padding: 10px 20px;
+  /* Padding around text */
+  text-align: left;
+  display: inline-block;
+  /* Dynamic width based on content */
+  font-size: 14px;
+  /* Font size */
+  font-weight: bold;
+  /* Bold text */
+  margin-top: 5px;
+  /* Space between title and badge */
+  color: #fff;
+  /* Text color */
+}
+
+.hr-booking hr {
+  border: 1px solid #E0E0E0;
+  /* Horizontal line style */
+  margin: 20px 0;
+  /* Margin above and below line */
+}
+
+.details-title {
+  margin: 0;
+  /* Reset margin */
+  font-size: 16px;
+  /* Adjust font size */
+  font-weight: 700;
+  /* Adjust font weight */
+}
+
+.form-group {
+  margin-bottom: 20px;
+  /* Space between form groups */
+}
+
+.label {
+  display: block;
+  /* Label on its own line */
+  margin-bottom: 5px;
+  /* Space between label and input */
+}
+
+.input-container {
+  display: flex;
+  /* Align icon and input side by side */
+  align-items: center;
+  /* Center items vertically */
+  background-color: #F4F6F8;
+  /* Background color for input */
+  border-radius: 20px;
+  /* Rounded corners */
+  padding: 5px;
+  margin-bottom: 15px;
+  /* Padding for input container */
+}
+
+/* Additional styling to connect the start and until date visually */
+#start-date,
+#until-date {
+  background-color: #F4F6F8;
+}
+
+#start-date {
+  border-right: 0;
+  /* Remove the right border to connect it with until date */
+}
+
+#until-date {
+  border-left: 0;
+  /* Remove the left border to connect it with start date */
+}
+
+.form-group {
+  margin-top: 20px !important;
+}
+
+.form-group label {
+  color: #333;
+  font-weight: 500;
+}
+
+.input-icon {
+  width: 20px;
+  /* Icon width */
+  height: 20px;
+  /* Icon height */
+  margin-left: 10px;
+  /* Space between icon and input */
+}
+
+.form-input {
+  flex: 1;
+  /* Allow input to take remaining space */
+  border: none;
+  /* Remove default border */
+  outline: none;
+  /* Remove outline on focus */
+  background: transparent;
+  /* Transparent background */
+  padding: 10px;
+  /* Padding inside input */
+  border-radius: 10px;
+  /* Rounded corners */
+}
+
+.icon-information {
+  display: flex;
+  /* Align info icon and text side by side */
+  align-items: center;
+  /* Center items vertically */
+  margin-top: 25px;
+  /* Space above information text */
+}
+
+.icon-information p {
+  margin-top: 25px;
+  font-weight: 700;
+  margin-left: 8px;
+  font-size: 14px;
+}
+
+.icon-information img {
+  width: 30px;
+  height: 30px;
+}
+
+.info-icon {
+  width: 20px;
+  /* Info icon width */
+  height: 20px;
+  /* Info icon height */
+  margin-right: 5px;
+  /* Space between icon and text */
+}
+
+/* Booking Details Section */
+.booking-details {
+  margin-bottom: 30px;
+  /* Space between details and button */
+}
+
+.detail-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 10px 0;
-}/*# sourceMappingURL=main.css.map */
+}
+
+.detail-item h3 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+  position: relative;
+}
+
+.detail-item p {
+  margin: 0;
+  font-weight: bold;
+  font-size: 14px;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .details {
+    padding: 30px;
+    margin-top: 70px;
+    /* Lebih sedikit padding untuk perangkat kecil */
+  }
+  .details-background {
+    margin-top: 30px;
+    height: 25vh;
+  }
+  .details-content {
+    padding: 0 10px;
+    /* Lebih kecil padding untuk konten */
+  }
+  .content-columns {
+    gap: 10px;
+    padding: 0 20px;
+    /* Padding lebih kecil */
+    flex-direction: column;
+    /* Kolom vertikal */
+  }
+  .column-left,
+  .column-right {
+    padding: 0;
+  }
+  .heading-content h1 {
+    font-size: 28px;
+    /* Kurangi ukuran font */
+  }
+  .heading-content h3 {
+    font-size: 14px;
+  }
+  .card-car-details {
+    padding: 15px;
+  }
+  .card-car-details h2 {
+    font-size: 20px;
+  }
+  .badge-category {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+  .form-group {
+    margin-bottom: 10px;
+  }
+  .form-input {
+    padding: 8px;
+  }
+  .icon-information p {
+    font-size: 12px;
+  }
+  .icon-information img {
+    width: 25px;
+    height: 25px;
+  }
+  .booking-image {
+    width: 100%;
+    height: auto;
+  }
+  .title-badge h3 {
+    font-size: 16px;
+  }
+  .badge {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+  .detail-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+  .detail-item h3,
+  .detail-item p {
+    font-size: 12px;
+  }
+}
+/* Mobile Kecil (Lebar maksimum 480px) *//*# sourceMappingURL=main.css.map */
